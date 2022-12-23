@@ -1,15 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Encriptacion</title>
-    <link rel="stylesheet" href="style.css" >
-    
-</head>
-<body>
-    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cajaP" id="img">
+      <img src="./img/logo.png" alt="Logo" id="Logo" />
+    </div>
+
+    <div class="cajap" id="entrada">
+      <div id="cajaTexto">
+        <input type="text" id="InputText" autofocus placeholder="Ingrese el Mensaje"/>
+        <p id="condicion">
+            Solo letras min&uacute;sculas y sin acentos.
+        </p>
+      </div>
+      <div id="botones">
+        <button type="submit" class="btn" id="btn-encriptar">Encriptar</button>
+        <button type="submit" class="btn" id="btn-desencriptar">
+          Desencriptar
+        </button>
+      </div>
+    </div>
+
+    <div class="cajaP" id="salida">
+        <div class="personfind">
+            <img src="./img/img_person.svg" alt="Persona Buscando" id="personF">
+        </div>
+        <div class="msj">
+            <h2>Ning&uacute;n mensaje fue encontrado</h2>
+            <p>
+                Ingresa el texto que desees encriptar o desencriptar.
+            </p>
+        </div>
+    </div>
+
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
