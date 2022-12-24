@@ -22,9 +22,10 @@ body {
   padding-block: 40px;
   margin-left: 80px;
 }
-#InputText[type="text"] {
+#InputText {
   background-color: transparent;
   border: transparent;
+  resize: none;
   width: 800px;
   height: 550px;
   font-size: 32px;
@@ -33,10 +34,10 @@ body {
   font-style: normal;
   resize: none;
 }
-input:focus[type="text"] {
+textarea:focus {
   outline: none;
 }
-input:active[type="text"] {
+textarea:active{
   outline: none;
 }
 #condicion {
