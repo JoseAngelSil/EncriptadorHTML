@@ -2,7 +2,6 @@
 const textIn = document.querySelector("#InputText");
 const btnEncriptar = document.querySelector("#btn-encriptar");
 const btnDesEncriptar = document.querySelector("#btn-desencriptar");
-const btnCopy = document.getElementById("btn-copy");
 textIn.focus();
 
 const diccionario = {
@@ -51,19 +50,8 @@ function desencriptar() {
 
 function mostrarMensaje(texOut) {
   let out = document.getElementById('salida');
-  out.innerHTML ='<p id="out">'+ texOut+'</p>'+
-  "<div id='cajaCopy'><button type='submit' class='btn' id='btn-copy'>Copiar</button></div>";
+  out.innerHTML ='<p id="out">'+ texOut+'</p>';
 }
 
 btnEncriptar.onclick = encriptar;
 btnDesEncriptar.onclick = desencriptar;
-btnCopy.addEventListener('click',()=>{
-    let textToCopy = document.getElementById('out').innerText;
-    if(navigator.clipboard) {
-        navigator.clipboard.writeText(textToCopy).then(() => {
-            alert('Copied to clipboard')
-        })
-    } else {
-        console.log('Browser Not compatible')
-    }
-});
